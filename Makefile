@@ -1,4 +1,4 @@
-all: alg1 alg1_counter alg2 alg3 alg4
+all: alg1 alg1_counter alg2 alg3 alg4 bakery
 
 alg1: alg1.c
 	gcc -pthread -Wall alg1.c -o alg1
@@ -15,5 +15,8 @@ alg3: alg3.c
 alg4: alg4.c
 	gcc -pthread -Wall alg4.c -o alg4
 
+bakery: bakery.c
+	gcc -pthread -Wall bakery.c -o bakery
+
 clean:
-	rm alg1 alg1_counter alg2 alg3 alg4
+	rm alg1 alg1_counter alg2 alg3 alg4 bakery
