@@ -8,5 +8,7 @@ Implemented as pthreads in C.
  - `alg2`: Wait-then-set flag waving.  Does not satisfy mutual exclusion or bounded waiting.
  - `alg3`: Set-then-wait flag waving.  Ends in deadlock, and therefore no progress or bounded waiting.
  - `alg4`: Peterson's algorithm.  Satisfies critical section requirements.
-
-Also, `alg1_counter` demonstrates the inefficiency of busy waiting.
+ 
+Also, for reference:
+ - `alg1_counter`: demonstrates the inefficiency of busy waiting.
+ - `bakery`: Lamport's bakery algorithm for n-process synchronization.
